@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зеленая планета</title>
+    <style>
+        body{
+            background-image: url('https://cloudmakers.ru/wp-content/uploads/2018/08/13.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+         }
+    </style>
+    <script>
+        var count = 0;
+         function OnClick(el) {
+            count ++;
+            if(count >= 4) {
+               alert('Вы слишком много отправили комментариев, админ сайта вас временно заблокировал');
+            } else {
+               alert('Спасибо за ваш комментарий!');
+            }
+         }
+    </script>
+</head>
+<body>
+    <h1>Напишите комментарий</h2>
+    <input type="text">
+    <button onclick="OnClick()">Отправить</button>
+</body>
+</html>
